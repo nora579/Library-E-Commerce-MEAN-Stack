@@ -271,19 +271,10 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
-.hero-circle {
-    width: 350px;
-    height: 350px;
 
-    border-radius: 50%;
-
-    background: #e5e7eb;
-
-    position: absolute;
-    z-index: 0;
-}
 
 .book-decoration {
     position: absolute;
@@ -292,14 +283,20 @@ button {
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.15);
 }
 
-.book-one {
-    transform: rotate(-12deg);
-    margin-left: -120px;
+#imgbooks {
+width: 350px;
+border: none;
+height: 100%;
+object-fit: cover;
 }
-
-.book-two {
-    transform: rotate(12deg);
-    margin-left: 120px;
+#herotest{
+      color: #64748b;
+    font-size: 14px;
+    font-weight: 500;
+    
+}
+#herotest a:hover{
+color: #172554;
 }
 
 .book-cover {
