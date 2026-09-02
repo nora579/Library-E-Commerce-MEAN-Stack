@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BookNest - Online Library</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="#" class="logo">
+                <span class="logo-icon">📚</span>
+                BookNest
+            </a>
+
+            <nav class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#books">Books</a>
+                <a href="#categories">Categories</a>
+                <a href="#authors">Authors</a>
+                <a href="#about">About</a>
+            </nav>
+
+            <div class="nav-actions">
+
+                <button class="icon-btn" title="Search">
+                    🔍
+                </button>
+
+                <button class="icon-btn" title="Wishlist">
+                    ♡
+                </button>
+
+                <button class="cart-btn">
+                    🛒
+                    <span class="cart-count">2</span>
+                </button>
+
+                <a href="#" class="login-btn">
+                    Login
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <span class="hero-label">
+                        📖 Your next great read is waiting
+                    </span>
+
+                    <h1>
+                        Discover Your
+                        <span>Next Favorite Book</span>
+                    </h1>
+
+                    <p>
+                        Explore thousands of books from your favorite authors
+                        and discover stories that stay with you forever.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#books" class="btn btn-primary">
+                            Explore Books →
+                        </a>
+
+                        <a href="#categories" class="btn btn-secondary">
+                            Browse Categories
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-books">
+
+                    <div class="book-decoration book-one">
+                        <div class="book-cover">
+                            <span>THE</span>
+                            <strong>ART</strong>
+                            <small>OF READING</small>
+                        </div>
+                    </div>
+
+                    <div class="book-decoration book-two">
+                        <div class="book-cover">
+                            <span>FIND</span>
+                            <strong>YOUR</strong>
+                            <small>STORY</small>
+                        </div>
+                    </div>
+
+                    <div class="hero-circle"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORIES ================= -->
+
+        <section class="categories section" id="categories">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <div>
+                        <span class="section-label">
+                            Explore
+                        </span>
+
+                        <h2>
+                            Browse by Category
+                        </h2>
+                    </div>
+
+                    <a href="#" class="view-link">
+                        View All →
+                    </a>
+
+                </div>
+
+
+                <div class="category-grid">
+
+                    <a href="#" class="category-card">
+                        <div class="category-icon">📚</div>
+                        <h3>Fiction</h3>
+                        <p>1,250 Books</p>
+                    </a>
+
+                    <a href="#" class="category-card">
+                        <div class="category-icon">🔬</div>
+                        <h3>Science</h3>
+                        <p>860 Books</p>
+                    </a>
+
+                    <a href="#" class="category-card">
+                        <div class="category-icon">💼</div>
+                        <h3>Business</h3>
+                        <p>620 Books</p>
+                    </a>
+
+                    <a href="#" class="category-card">
+                        <div class="category-icon">🧠</div>
+                        <h3>Self Development</h3>
+                        <p>540 Books</p>
+                    </a>
+
+                    <a href="#" class="category-card">
+                        <div class="category-icon">💻</div>
+                        <h3>Technology</h3>
+                        <p>730 Books</p>
+                    </a>
+
+                    <a href="#" class="category-card">
+                        <div class="category-icon">🏛️</div>
+                        <h3>History</h3>
+                        <p>480 Books</p>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURED BOOKS ================= -->
+
+        <section class="books-section section" id="books">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <div>
+                        <span class="section-label">
+                            Our Collection
+                        </span>
+
+                        <h2>
+                            Featured Books
+                        </h2>
+                    </div>
+
+                    <a href="#" class="view-link">
+                        View All Books →
+                    </a>
+
+                </div>
+
+
+                <div class="books-grid">
+
+                    <!-- BOOK 1 -->
+
+                    <article class="book-card">
+
+                        <div class="book-image">
+
+                            <span class="book-badge">
+                                Bestseller
+                            </span>
+
+                            <div class="cover cover-1">
+                                <small>THE</small>
+                                <strong>GREAT</strong>
+                                <span>JOURNEY</span>
+                            </div>
+
+                            <button class="wishlist">
+                                ♡
+                            </button>
+
+                        </div>
+
+                        <div class="book-info">
+
+                            <span class="book-category">
+                                Fiction
+                            </span>
+
+                            <h3>
+                                The Great Journey
+                            </h3>
+
+                            <p class="author">
+                                James Wilson
+                            </p>
+
+                            <div class="rating">
+                                ⭐⭐⭐⭐⭐
+                                <span>(124)</span>
+                            </div>
+
+                            <div class="book-bottom">
+
+                                <span class="price">
+                                    $18.99
+                                </span>
+
+                                <button class="add-cart">
+                                    + Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- BOOK 2 -->
+
+                    <article class="book-card">
+
+                        <div class="book-image">
+
+                            <span class="book-badge new">
+                                New
+                            </span>
+
+                            <div class="cover cover-2">
+                                <small>THE</small>
+                                <strong>POWER</strong>
+                                <span>OF HABITS</span>
+                            </div>
+
+                            <button class="wishlist">
+                                ♡
+                            </button>
+
+                        </div>
+
+                        <div class="book-info">
+
+                            <span class="book-category">
+                                Self Development
+                            </span>
+
+                            <h3>
+                                The Power of Habits
+                            </h3>
+
+                            <p class="author">
+                                Sarah Mitchell
+                            </p>
+
+                            <div class="rating">
+                                ⭐⭐⭐⭐⭐
+                                <span>(87)</span>
+                            </div>
+
+                            <div class="book-bottom">
+
+                                <span class="price">
+                                    $15.50
+                                </span>
+
+                                <button class="add-cart">
+                                    + Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- BOOK 3 -->
+
+                    <article class="book-card">
+
+                        <div class="book-image">
+
+                            <div class="cover cover-3">
+                                <small>INTRODUCTION</small>
+                                <strong>TO</strong>
+                                <span>AI</span>
+                            </div>
+
+                            <button class="wishlist">
+                                ♡
+                            </button>
+
+                        </div>
+
+                        <div class="book-info">
+
+                            <span class="book-category">
+                                Technology
+                            </span>
+
+                            <h3>
+                                Introduction to AI
+                            </h3>
+
+                            <p class="author">
+                                Michael Brown
+                            </p>
+
+                            <div class="rating">
+                                ⭐⭐⭐⭐☆
+                                <span>(65)</span>
+                            </div>
+
+                            <div class="book-bottom">
+
+                                <span class="price">
+                                    $24.99
+                                </span>
+
+                                <button class="add-cart">
+                                    + Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- BOOK 4 -->
+
+                    <article class="book-card">
+
+                        <div class="book-image">
+
+                            <span class="book-badge sale">
+                                -20%
+                            </span>
+
+                            <div class="cover cover-4">
+                                <small>THE</small>
+                                <strong>HIDDEN</strong>
+                                <span>WORLD</span>
+                            </div>
+
+                            <button class="wishlist">
+                                ♡
+                            </button>
+
+                        </div>
+
+                        <div class="book-info">
+
+                            <span class="book-category">
+                                Mystery
+                            </span>
+
+                            <h3>
+                                The Hidden World
+                            </h3>
+
+                            <p class="author">
+                                Daniel Carter
+                            </p>
+
+                            <div class="rating">
+                                ⭐⭐⭐⭐⭐
+                                <span>(201)</span>
+                            </div>
+
+                            <div class="book-bottom">
+
+                                <div>
+                                    <span class="old-price">$22.99</span>
+                                    <span class="price">$18.39</span>
+                                </div>
+
+                                <button class="add-cart">
+                                    + Cart
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROMO ================= -->
+
+        <section class="promo">
+
+            <div class="container promo-container">
+
+                <div>
+
+                    <span class="section-label">
+                        Special Offer
+                    </span>
+
+                    <h2>
+                        Get 20% Off Your First Order
+                    </h2>
+
+                    <p>
+                        Sign up today and receive a special discount
+                        on your first purchase.
+                    </p>
+
+                    <a href="#" class="btn btn-primary">
+                        Create Account →
+                    </a>
+
+                </div>
+
+                <div class="promo-icon">
+                    📚
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= AUTHORS ================= -->
+
+        <section class="authors section" id="authors">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <span class="section-label">
+                            Meet the Writers
+                        </span>
+
+                        <h2>
+                            Popular Authors
+                        </h2>
+
+                    </div>
+
+                    <a href="#" class="view-link">
+                        All Authors →
+                    </a>
+
+                </div>
+
+
+                <div class="authors-grid">
+
+                    <div class="author-card">
+
+                        <div class="author-avatar">
+                            JW
+                        </div>
+
+                        <h3>James Wilson</h3>
+
+                        <p>24 Books</p>
+
+                    </div>
+
+
+                    <div class="author-card">
+
+                        <div class="author-avatar">
+                            SM
+                        </div>
+
+                        <h3>Sarah Mitchell</h3>
+
+                        <p>18 Books</p>
+
+                    </div>
+
+
+                    <div class="author-card">
+
+                        <div class="author-avatar">
+                            MB
+                        </div>
+
+                        <h3>Michael Brown</h3>
+
+                        <p>15 Books</p>
+
+                    </div>
+
+
+                    <div class="author-card">
+
+                        <div class="author-avatar">
+                            DC
+                        </div>
+
+                        <h3>Daniel Carter</h3>
+
+                        <p>21 Books</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer" id="about">
+
+        <div class="container footer-grid">
+
+            <div class="footer-about">
+
+                <a href="#" class="logo">
+                    <span class="logo-icon">📚</span>
+                    BookNest
+                </a>
+
+                <p>
+                    Your online destination for discovering,
+                    exploring, and purchasing your favorite books.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Shop</h3>
+
+                <a href="#">All Books</a>
+                <a href="#">Categories</a>
+                <a href="#">Best Sellers</a>
+                <a href="#">New Arrivals</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Account</h3>
+
+                <a href="#">Login</a>
+                <a href="#">Register</a>
+                <a href="#">My Orders</a>
+                <a href="#">Wishlist</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Help</h3>
+
+                <a href="#">Contact Us</a>
+                <a href="#">FAQ</a>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © 2026 BookNest. All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
