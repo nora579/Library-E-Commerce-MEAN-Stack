@@ -8,23 +8,85 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Google Font -->
+    <!-- Typography -->
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <!-- Font Awesome -->     
+    <!-- Icons -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+    <!-- Authentication -->
 
-    <header class="navbar">
+    <section class="auth-screen" id="auth-screen">
+        <div class="auth-decoration auth-decoration-left"></div>
+        <div class="auth-decoration auth-decoration-right"></div>
 
-        <div class="container nav-container">
+        <div class="auth-card">
+            <div class="auth-brand">
+                <span class="auth-brand-icon">📖</span>
+                <span>BookNest</span>
+            </div>
+
+            <input class="auth-mode" id="login-mode" name="auth-mode" type="radio" checked>
+            <input class="auth-mode" id="register-mode" name="auth-mode" type="radio">
+
+            <div class="auth-heading">
+                <span class="auth-bookmark">✦</span>
+                <h1><span class="login-copy">Welcome Back</span><span class="register-copy">Join BookNest</span></h1>
+                <p><span class="login-copy">Sign in to continue your reading journey.</span><span class="register-copy">Create an account and curate your next chapter.</span></p>
+            </div>
+
+            <div class="auth-tabs" role="tablist" aria-label="Account access">
+                <label class="auth-tab" for="login-mode" role="tab">Login</label>
+                <label class="auth-tab" for="register-mode" role="tab">Create Account</label>
+            </div>
+
+            <form class="auth-form" id="auth-form">
+                <div class="form-field register-field">
+                    <label for="full-name">Full Name</label>
+                    <input id="full-name" name="name" type="text" placeholder="Eleanor Vance" autocomplete="name">
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Email Address</label>
+                    <input id="email" name="email" type="email" placeholder="reader@booknest.com" required autocomplete="email">
+                </div>
+
+                <div class="form-field">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" placeholder="Enter your password" required autocomplete="current-password">
+                </div>
+
+                <div class="auth-options" id="login-options">
+                    <label class="remember-option"><input type="checkbox" name="remember"> <span>Remember me</span></label>
+                    <a href="#" id="forgot-password">Forgot password?</a>
+                </div>
+
+                <a class="auth-submit" id="auth-submit" href="#home"><span class="login-copy">Sign In</span><span class="register-copy">Create Account</span><span class="auth-submit-arrow">→</span></a>
+            </form>
+
+            <div class="auth-divider"><span>Or continue with</span></div>
+            <div class="social-buttons">
+                <button type="button" class="social-button" aria-label="Continue with Google"><strong>G</strong> Google</button>
+                <button type="button" class="social-button" aria-label="Continue with Apple"><strong>●</strong> Apple</button>
+            </div>
+
+            <p class="auth-note">Authentication is simulated for design purposes.</p>
+        </div>
+    </section>
+
+    <div id="home">
+
+        <!-- Navigation -->
+
+        <header class="navbar">
+
+            <div class="container nav-container">
 
             <a href="#" class="logo">
                 <span class="logo-icon">📚</span>
@@ -54,47 +116,42 @@
                     <span class="cart-count">2</span>
                 </button>
 
-                <a href="#" class="login-btn">
+                <a href="#login-mode" class="login-btn">
                     Login
                 </a>
 
             </div>
 
-        </div>
+            </div>
 
-    </header>
+        </header>
 
+        <!-- Hero -->
 
-    <!-- ================= HERO ================= -->
+        <main>
 
-    <main>
+            <section class="hero">
 
-        <section class="hero">
+                <div class="container hero-container">
 
-            <div class="container hero-container">
+                    <div class="hero-content">
 
-                <div class="hero-content">
-
-                  <h1>Welcome to BookNest</h1>
-                  <p>Find your favourite books and explore new stories.</p>
-                 <a href="#Books" id="herotest">Browse Books</a>
+                        <h1>Welcome to BookNest</h1>
+                        <p>Find your favourite books and explore new stories.</p>
+                        <a href="#books" id="herotest">Browse Books</a>
                     </div>
-
 
                 </div>
 
-
                 <div class="hero-books">
-   <img id="imgbooks" alt="Books"
-    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWA5E5mlmy_8OA1JuCEUoUDYoMCUZkpophsC5ZFEQHJw&s  ">
+                    <img id="imgbooks" alt="Books"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWA5E5mlmy_8OA1JuCEUoUDYoMCUZkpophsC5ZFEQHJw&s">
+                </div>
+
+            </section>
 
 
-            </div>
-
-        </section>
-
-
-        <!-- ================= CATEGORIES ================= -->
+        <!-- Categories -->
 
         <section class="categories section" id="categories">
 
@@ -164,7 +221,7 @@
         </section>
 
 
-        <!-- ================= FEATURED BOOKS ================= -->
+        <!-- Featured books -->
 
         <section class="books-section section" id="books">
 
@@ -191,7 +248,7 @@
 
                 <div class="books-grid">
 
-                    <!-- BOOK 1 -->
+                    <!-- Book 1 -->
 
                     <article class="book-card">
 
@@ -251,7 +308,7 @@
                     </article>
 
 
-                    <!-- BOOK 2 -->
+                    <!-- Book 2 -->
 
                     <article class="book-card">
 
@@ -311,7 +368,7 @@
                     </article>
 
 
-                    <!-- BOOK 3 -->
+                    <!-- Book 3 -->
 
                     <article class="book-card">
 
@@ -367,7 +424,7 @@
                     </article>
 
 
-                    <!-- BOOK 4 -->
+                    <!-- Book 4 -->
 
                     <article class="book-card">
 
@@ -434,7 +491,7 @@
         </section>
 
 
-        <!-- ================= PROMO ================= -->
+        <!-- Promotion -->
 
         <section class="promo">
 
@@ -455,7 +512,7 @@
                         on your first purchase.
                     </p>
 
-                    <a href="#" class="btn btn-primary">
+                    <a href="#register-mode" class="btn btn-primary">
                         Create Account →
                     </a>
 
@@ -470,7 +527,7 @@
         </section>
 
 
-        <!-- ================= AUTHORS ================= -->
+        <!-- Authors -->
 
         <section class="authors section" id="authors">
 
@@ -559,7 +616,7 @@
     </main>
 
 
-    <!-- ================= FOOTER ================= -->
+    <!-- Footer -->
 
     <footer class="footer" id="about">
 
@@ -595,28 +652,20 @@
             <div>
 
                 <h3>Account</h3>
-
-                <a href="#">Login</a>
-                <a href="#">Register</a>
+                <a href="#login-mode">Login</a>
+                <a href="#register-mode">Register</a>
                 <a href="#">My Orders</a>
                 <a href="#">Wishlist</a>
-
             </div>
 
-
             <div>
-
                 <h3>Help</h3>
-
                 <a href="#">Contact Us</a>
                 <a href="#">FAQ</a>
                 <a href="#">Shipping</a>
                 <a href="#">Returns</a>
-
             </div>
-
         </div>
-
 
         <div class="footer-bottom">
 
@@ -631,6 +680,8 @@
         </div>
 
     </footer>
+
+    </div>
 
 </body>
 </html>
