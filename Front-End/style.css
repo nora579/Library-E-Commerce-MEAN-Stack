@@ -500,61 +500,36 @@ button {
 }
 
 .wishlist:hover {
-    color: #172554;
+    color: #e11d48;
+}
+
+.wishlist.active {
+    color: #e11d48;
 }
 
 
 /* =========================
    BOOK COVERS
 ========================= */
+.rating i {
+    color: #f59e0b;
+    font-size: 11px;
+}
 
 .cover {
     width: 150px;
     height: 220px;
 
-    padding: 20px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-
-    color: white;
+    overflow: hidden;
 
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.18);
 }
 
-.cover-1 {
-    background: #172554;
-}
-
-.cover-2 {
-    background: #475569;
-}
-
-.cover-3 {
-    background: #334155;
-}
-
-.cover-4 {
-    background: #64748b;
-}
-
-.cover small {
-    font-size: 9px;
-}
-
-.cover strong {
-    margin: 5px 0;
-
-    font-size: 25px;
-    line-height: 1.1;
-}
-
-.cover span {
-    font-size: 11px;
+.cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 
